@@ -46,11 +46,11 @@ public class LanguageUtils {
             put('ß',"ss"); put('ẞ',"SS");
 
             // Russian chars
-            put('а', "a"); put('б', "b"); put('в', "v");  put('г', "g"); put('д', "d"); put('е', "e"); put('ё', "jo"); put('ж', "zh");
-            put('з', "z"); put('и', "i"); put('й', "jj"); put('к', "k"); put('л', "l"); put('м', "m"); put('н', "n");  put('о', "o");
-            put('п', "p"); put('р', "r"); put('с', "s");  put('т', "t"); put('у', "u"); put('ф', "f"); put('х', "kh"); put('ц', "c");
-            put('ч', "ch");put('ш', "sh");put('щ', "shh");put('ъ', "\"");put('ы', "y"); put('ь', "'"); put('э', "eh"); put('ю', "ju");
-            put('я', "ja");
+            put('а', "U+0430"); put('б', "U+0431"); put('в', "U+0432");  put('г', "U+0433"); put('д', "U+0434"); put('е', "U+0435"); put('ё', "U+0451"); put('ж', "U+0436");
+            put('з', "U+0437"); put('и', "U+0438"); put('й', "U+0439"); put('к', "U+043A"); put('л', "U+043B"); put('м', "U+043C"); put('н', "U+043D");  put('о', "U+043E");
+            put('п', "U+043F"); put('р', "U+0440"); put('с', "U+0441");  put('т', "U+0442"); put('у', "U+0443"); put('ф', "U+0444"); put('х', "U+0445"); put('ц', "U+0446");
+            put('ч', "U+0447");put('ш', "U+0448");put('щ', "U+0449");put('ъ', "U+044A");put('ы', "U+044B"); put('ь', "U+044C"); put('э', "U+044D"); put('ю', "U+044E");
+            put('я', "U+044F");
 
             // Hebrew chars
             put('א', "a"); put('ב', "b"); put('ג', "g");  put('ד', "d"); put('ה', "h"); put('ו', "u"); put('ז', "z"); put('ח', "kh");
