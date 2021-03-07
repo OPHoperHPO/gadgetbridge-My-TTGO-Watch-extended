@@ -62,6 +62,7 @@ import nodomain.freeyourgadget.gadgetbridge.model.DeviceService;
 import nodomain.freeyourgadget.gadgetbridge.model.MusicSpec;
 import nodomain.freeyourgadget.gadgetbridge.model.MusicStateSpec;
 import nodomain.freeyourgadget.gadgetbridge.model.NotificationSpec;
+import nodomain.freeyourgadget.gadgetbridge.model.Weather;
 import nodomain.freeyourgadget.gadgetbridge.model.WeatherSpec;
 import nodomain.freeyourgadget.gadgetbridge.service.btle.AbstractBTLEDeviceSupport;
 import nodomain.freeyourgadget.gadgetbridge.service.btle.TransactionBuilder;
@@ -574,6 +575,7 @@ public class BangleJSDeviceSupport extends AbstractBTLEDeviceSupport {
             o.put("t", "weather");
             o.put("temp", weatherSpec.currentTemp);
             o.put("hum", weatherSpec.currentHumidity);
+            o.put("icon". Weather.mapToOpenWeatherMapIcon(weatherSpec.currentConditionCode));
             o.put("txt", LanguageUtils.transliterate(weatherSpec.currentCondition));
             o.put("wind", weatherSpec.windSpeed);
             o.put("wdir", weatherSpec.windDirection);
