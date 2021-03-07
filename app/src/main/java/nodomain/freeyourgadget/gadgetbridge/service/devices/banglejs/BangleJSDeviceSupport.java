@@ -575,7 +575,7 @@ public class BangleJSDeviceSupport extends AbstractBTLEDeviceSupport {
             o.put("t", "weather");
             o.put("temp", weatherSpec.currentTemp);
             o.put("hum", weatherSpec.currentHumidity);
-            o.put("icon". Weather.mapToOpenWeatherMapIcon(weatherSpec.currentConditionCode));
+            o.put("icon", Weather.mapToOpenWeatherMapIcon(weatherSpec.currentConditionCode));
             o.put("txt", LanguageUtils.transliterate(weatherSpec.currentCondition));
             o.put("wind", weatherSpec.windSpeed);
             o.put("wdir", weatherSpec.windDirection);
