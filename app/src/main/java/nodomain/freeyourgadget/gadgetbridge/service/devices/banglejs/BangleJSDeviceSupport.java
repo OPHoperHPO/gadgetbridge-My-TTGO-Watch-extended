@@ -24,7 +24,7 @@ import android.net.Uri;
 import android.widget.Toast;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-
+import nodomain.freeyourgadget.gadgetbridge.util.LanguageUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -574,7 +574,7 @@ public class BangleJSDeviceSupport extends AbstractBTLEDeviceSupport {
             o.put("t", "weather");
             o.put("temp", weatherSpec.currentTemp);
             o.put("hum", weatherSpec.currentHumidity);
-            o.put("txt", weatherSpec.currentCondition);
+            o.put("txt", LanguageUtils.transliterate(weatherSpec.currentCondition));
             o.put("wind", weatherSpec.windSpeed);
             o.put("wdir", weatherSpec.windDirection);
             o.put("loc", weatherSpec.location);
